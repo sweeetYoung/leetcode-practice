@@ -1,3 +1,8 @@
+/**
+ * 冒泡排序
+ * @param numArray
+ * @returns {*[]|*}
+ */
 function bubbleSort(numArray) {
   if (!numArray) {
     return [];
@@ -15,4 +20,4 @@ function bubbleSort(numArray) {
 }
 
 let data = [1,5,3,2,7,4,6,9];
-console.log(bubbleSort(null))
+console.log(bubbleSort(data))
