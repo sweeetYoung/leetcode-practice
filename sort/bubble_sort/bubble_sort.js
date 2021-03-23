@@ -1,4 +1,3 @@
-
 function bubbleSort(numArray) {
   if (!numArray) {
     return [];
@@ -14,7 +13,6 @@ function bubbleSort(numArray) {
   }
   return numArray;
 }
-
 
 let data = [1,5,3,2,7,4,6,9];
 console.log(bubbleSort(null))
