@@ -11,7 +11,9 @@ function largestNumber(nums) {
   newArr.sort(function (a,b){
     return (a + b) - (b + a);
   })
+  console.log(newArr)
   newArr.reverse();
+  console.log(newArr)
   let res = newArr.join('');
   if (res[0] === '0') {
     return "0"
