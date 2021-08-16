@@ -50,4 +50,4 @@ function bubbleSortShort(arr) {
 }
 
 let data = [1,5,3,2,7,4,6,9];
-console.log(bubbleSortShort(data))
+console.log(bubbleSort(data))

@@ -5,11 +5,11 @@
  * @returns {null}
  */
 
-// function TreeNode(x) {
-//   this.val = x;
-//   this.left = null;
-//   this.right = null;
-// }
+function TreeNode(x) {
+  this.val = x;
+  this.left = null;
+  this.right = null;
+}
 
 function buildTree (preorder, inorder) {
     let result = null;
@@ -42,7 +42,7 @@ function buildTree (preorder, inorder) {
     return result;
 }
 
-let preorder = [3,9,20,15,7];
-let inorder = [9,3,15,20,7]
+let pre1 = [3,9,20,15,7];
+let in1 = [9,3,15,20,7]
 
-console.log(buildTree(preorder, inorder))
+console.log(buildTree(pre1, in1))

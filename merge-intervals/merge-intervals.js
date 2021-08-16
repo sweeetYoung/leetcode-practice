@@ -15,7 +15,9 @@ function merge(intervals) {
   intervals.sort(function(a,b){
     return a[0] - b[0];
   })
+  console.log(intervals);
   res.push(intervals[0]);
+  console.log(res);
   // 对排好序的数组进行遍历
   for (let i = 0; i < intervals.length; i++) {
     // 如果遍历到的当前区间左端点大于res数组最后一个区间的右端点 则他们不重叠 可以将此区间push进res数组
