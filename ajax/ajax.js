@@ -1,6 +1,6 @@
 
 function ajax(url, resolve, reject) {
-  const xhr = new XMLHttpRequest();
+  const xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject();
   xhr.open('GET', url, false);
   xhr.onreadystatechange = () => {
     if (xhr.status === 200) {
@@ -10,5 +10,5 @@ function ajax(url, resolve, reject) {
   xhr.onerror = () => {
     reject();
   }
-  xhr.send();
+  xhr.send(null);
 }
