@@ -24,7 +24,7 @@ function merge(intervals) {
     if (intervals[i][0] > res[res.length - 1][1]) {
       res.push(intervals[i]);
     } else {
-      // 当前遍历到的区间右端点小于res数组最后一个区间的右端点 区间已重叠 需要将res数组最后区间的右端点进行替换
+      // 当前遍历到的区间右端点大于res数组最后一个区间的右端点 区间已重叠 需要将res数组最后区间的右端点进行替换
       if (intervals[i][1] > res[res.length - 1][1]) {
         res[res.length - 1][1] = intervals[i][1];
       }
